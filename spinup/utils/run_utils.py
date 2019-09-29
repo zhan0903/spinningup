@@ -495,6 +495,10 @@ class ExperimentGrid:
 
         # Print info about self.
         self.print()
+        print("+++++++++++++++++++++++++++++++++++")
+        print("in run ExperimentGrid")
+        print("+++++++++++++++++++++++++++++++++++")
+
 
         # Make the list of all variants.
         variants = self.variants()
