@@ -130,7 +130,8 @@ def parse_and_execute_grid_search(cmd, args):
     # Make sure that if num_cpu > 1, the algorithm being used is compatible
     # with MPI.
     print("------------------------------------------------")
-    print("run_kwargs['num_cpu'] == 1",run_kwargs['num_cpu'])
+    print("run_kwargs-num_cpu",run_kwargs['num_cpu'])
+    print("run_kwargs",run_kwargs)
     print("------------------------------------------------")
 
     if 'num_cpu' in run_kwargs and not(run_kwargs['num_cpu'] == 1):
