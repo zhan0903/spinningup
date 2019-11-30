@@ -326,7 +326,7 @@ if __name__ == '__main__':
     parser.add_argument('--exp_name', type=str, default='sac')
     args = parser.parse_args()
 
-    from spinup.utils.run_utils import setup_logger_kwargs
+    from spinup.run_utils import setup_logger_kwargs
     logger_kwargs = setup_logger_kwargs(args.exp_name, args.seed)
 
     sac(lambda : gym.make(args.env), actor_critic=core.mlp_actor_critic,
